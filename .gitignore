@@ -1,11 +1,11 @@
 local teleportLocations = {
-    CFrame.new(124, 20, 576),
-    CFrame.new(1489, 20, 1760),
-    CFrame.new(575, 20, 3283),
+    CFrame.new(124, 13, 576),
+    CFrame.new(1489, 13, 1760),
+    CFrame.new(575, 13, 3283),
     CFrame.new(10, 116, 5647)
 }
 
-wait(10) -- wait a few seconds before executing the script
+wait(13) -- wait a few seconds before executing the script
 
 for _, location in pairs(teleportLocations) do
     game.Players.LocalPlayer.Character:MoveTo(location.p)
