@@ -1,7 +1,7 @@
 local teleportLocations = {
-    CFrame.new(124, 7, 576),
-    CFrame.new(1489, 7, 1760),
-    CFrame.new(575, 7, 3283),
+    CFrame.new(124, 30, 576),
+    CFrame.new(1489, 30, 1760),
+    CFrame.new(575, 30, 3283),
     CFrame.new(10, 116, 5647)
 }
 
