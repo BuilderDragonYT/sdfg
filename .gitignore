@@ -1,41 +1,16 @@
-# Compiled Lua sources
-luac.out
+local teleportLocations = {
+    CFrame.new(124, 16, 576),
+    CFrame.new(1489, 16, 1760),
+    CFrame.new(575, 16, 3283),
+    CFrame.new(10, 116, 5647)
+}
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+wait(10) -- wait a few seconds before executing the script
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+for _, location in pairs(teleportLocations) do
+    game.Players.LocalPlayer.Character:MoveTo(location.p)
+    wait(5)
+end
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
